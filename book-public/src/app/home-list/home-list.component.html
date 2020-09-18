@@ -1,0 +1,55 @@
+
+<section class='book-section' *ngFor="let book of books">
+  <div class='book-card'>
+    <div class='image'>
+      <div class='content'>
+        <div class='book-cover'>
+          <img alt='Card Image' src={{book.img}}>
+        </div>
+      </div>
+      <ul class='book-meta'>
+        <li class='reads meta-item'>
+          <span class='text'>
+            <div class='read'>
+         {{book.read}}
+      </div>
+          </span>
+          <i class='material-icons icon'>
+            visibility
+          </i>
+        </li>
+        <li class='likes meta-item'>
+          <span class='text'>
+            <div class='author'>
+        likes {{book.likes}}
+          </div>
+          </span>
+        </li>
+      </ul>
+    </div>
+    <div class='text book-text'>
+      <span class='genre'>
+        {{book.type}}
+      </span>
+      <h1 class='heading'>
+        {{book.name}}
+      </h1>
+      <div class='author'>
+        by {{book.author}}
+      </div>
+      <div class='rating'>
+        ★★★★★
+      </div>
+      <article class='description'>
+        {{book.description}}
+      </article>
+      <footer class='footer'>
+        <a class='button' routerLink="book/{{book._id}}">
+          Details
+        </a>
+      </footer>
+    </div>
+  </div>
+</section>
+
+

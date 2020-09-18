@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+</style>
+
+
+</head>
+<body>
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Contact us or leave us a Message</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="https://images.pexels.com/photos/1907785/pexels-photo-1907785.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:55%" >
+    </div>
+    <div class="column">
+      <form action="mailto:someone@example.com">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input onclick="myFunction()" type="submit" value="Submit">
+        &nbsp;&nbsp;<label id="mySuccess" style="color:green">Mail Sent Successfully ✔</label>
+
+       
+
+       
+
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("mySuccess");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  </script>
+
+</body>
+</html>
