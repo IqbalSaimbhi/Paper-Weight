@@ -4,7 +4,7 @@ const bookSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true,
-        minLength: 3
+        minLength: 4
     },
     type: {
         type: String,
